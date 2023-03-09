@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow functions.
+    </div>
+
+
+    <script>
+        // function greet() {
+        //     console.log('good morning');
+        // }
+        // greet();
+
+
+        // Arrow function
+        // greet = () => {
+        //     console.log('good morning');
+        // }
+        // greet();
+
+
+        // setInterval(() => {
+        //     console.log('good morning');
+        // }, 3000);
+
+
+        // short cut for time
+        // setInterval(() => {
+        //     time = new Date();
+        //     console.log(time);
+        // }, 1000);
+
+        // let sum = (a, b) => {
+        //     return a + b;
+        // };
+        // console.log(sum(34, 58));
+
+        // let sum1 = (a, b) => a + b;
+        // console.log(sum1(4000, 5000));
+
+        // let half = a => a / 3;
+        // console.log(half(85));
+
+        // let againgreet = () => console.log("Hello i am back");
+        // againgreet();
+
+        let obj1 = {
+            greeting: "good morning",
+            names: ["ansh", "om", "roy", "royal"],
+            speak() {
+                // lexical this
+                // in below line we not use function -> this.name.forEach(function s (student){  
+                this.names.forEach((student) => {
+                    console.log(this.greeting + "." + " how are you " + student);
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+
+</body>
+
+</html>

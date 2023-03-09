@@ -1,0 +1,7 @@
+/* selector makes it easy for us to target single/multiple html elements in the markup */
+/*
+css element selector 
+css id selecto 
+css class selector
+css grouping selector 
+ */

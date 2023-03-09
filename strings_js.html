@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and string method </title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content">
+
+        </div>
+        <h1>This is Strings</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ex aliquam repellat necessitatibus
+            officiis sit iusto dignissimos temporibus aliquid voluptate quo dolorem distinctio minima fuga molestias
+            voluptatibus, quia quae autem sapiente consequuntur facilis obcaecati magnam nam? Facere quis repudiandae
+            fuga!</p>
+    </div>
+    <script>
+        // in string single and double cort both are allow
+        // double = between single and single between double
+        var string = 'this ';
+        // console.log(string);
+        var name = "ansh ";
+        var massage = "is good boy. ";
+        // console.log(string + name + massage);
+        var channel = 'CodeWithAnsh';
+        // below line method like filling blanks
+        var temp = `${name}is a nice person 'and' he has a "channel" called. `;
+        console.log(temp);
+        var len = temp.length;
+        console.log(len);
+        console.log(`length of temp is ${len}`);
+        // \n new line
+        console.log("hello world\nansh");
+        // \t for tab
+        // \b for backspace
+        //  ( \\ for one \ in output )
+        console.log("hello world\\nansh");
+
+        // below line is string constructor
+        var t = new String("this");
+        console.log(t);
+
+        document.getElementById('content').innerHTML = '<h3> this is an h3 heading </h3>'
+
+    </script>
+</body>
+
+</html>

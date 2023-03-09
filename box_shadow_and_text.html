@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            background-color: black;
+            display: flex;
+            height: 100vh;
+
+            /* opacity: 0.9; */
+        }
+
+        .card {
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: burlywood;
+            /*          offside-x, offside-y, blure-radious, spred-radious colour  */
+            box-shadow: 4px 3px 15px 4px rgb(22, 222, 222, 0.9);
+            /* negative number use for box shadow up side  */
+
+            /* shadow inside box */
+            box-shadow: inset 4px 33px 70px 4px green, 4px 3px 15px 3px red;
+            text-align: center;
+
+        }
+
+        .card h2 {
+            text-shadow: 2px 1px 2px gray;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car1">
+            <h2>card 1 :- this card is king's of royal</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur at itaque explicabo aliquam
+                veritatis quasi eum dicta laborum sed, fuga recusandae aut minima quod voluptates, ipsam ad vitae
+                tempore doloremque, eaque blanditiis autem illo! Cumque impedit tempora nesciunt deleniti.</p>
+        </div>
+        <div class="card" id="car2">
+            <h2>card 2 :- this card is queen's of royal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto consectetur, aperiam illo
+                dolorum quisquam cupiditate et debitis sit eos quos, saepe dolore, quae est magni veniam maxime qui non
+                sapiente nemo soluta? Officiis explicabo eum voluptatibus, recusandae accusantium quidem.</p>
+        </div>
+        <div class="card" id="car3">
+            <h2>card 3 :- this card is prince's of royal</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore alias eum placeat voluptas aperiam
+                labore maxime consequatur, aliquam culpa? Incidunt doloribus reiciendis adipisci iste neque quos
+                consectetur blanditiis voluptatum nesciunt sint eum ea praesentium sapiente, voluptate reprehenderit
+                veniam aliquid quae?</p>
+        </div>
+    </div>
+</body>
+
+</html>

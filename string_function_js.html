@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+
+<body>
+    <script>
+        var str = 'this is a string';
+        console.log(str);
+
+        // first occurence of a substring
+        var pos = str.indexOf('is');
+        console.log(pos);
+
+        // last occurence of a substring
+        var pos = str.lastIndexOf('is');
+        console.log(pos);
+
+        // substring of a string
+        // below line contain index 1 to index 7 but not include index 8
+        var substr1 = str.slice(1, 8);
+        console.log(substr1);
+
+        // substring not contain negative value but slice contain negative values
+        var substr2 = str.substring(1, 8);
+        console.log(substr2);
+
+        // substr funciton first parameter are starting index and second parameter are length of require string
+        var substr3 = str.substr(1, 2);
+        console.log(substr3);
+
+        // old str not change but changing occure in replaced string
+        var replaced = str.replace('string', 'Ansh');
+        console.log(replaced);
+
+        // below two line is function so at the last of the function () are requied
+        console.log(replaced.toLowerCase());
+        console.log(replaced.toUpperCase());
+
+        // concat method to join two strings
+        var new_str = str.concat(' new_str');
+        console.log(new_str);
+
+        var strwithwhitespaces = "    this    is    whitespaces         ";
+        // without function use
+        console.log(strwithwhitespaces);
+        // with function use - trim the before and after spaces
+        console.log(strwithwhitespaces.trim());
+
+
+        // find charactor at particulare index
+        var char3 = str.charAt(5);
+        console.log(char3);
+        // below line reture at index charactor code
+        var char3 = str.charCodeAt(5);
+        console.log(char3);
+
+        console.log(str[5]);
+        var char4 = str.charCodeAt(str[5]);
+        console.log(char4);
+
+    </script>
+</body>
+
+</html>

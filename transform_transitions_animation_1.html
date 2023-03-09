@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trasform, transition and animation</title>
+    <style>
+        .container {
+            background-color: cyan;
+            height: 7000px;
+
+        }
+
+        /* .box { */
+        /* border: 2px solid black; */
+        /* transform-origin: 0; */
+        /* this default center point to rotate the element */
+        /* transform: translate(35px, 50px) rotate(45deg); */
+
+        /* transform: scale(2, 3); */
+        /* transform: scaleX(5); */
+        /* transform: scaleY(1); */
+
+        /* transform: skew(5deg, 5deg); */
+
+        /* } */
+
+        img {
+            width: 400px;
+            height: 400px;
+            transition-property: width, height;
+            /* transition-property: height; */
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+
+            transition: width 1s ease-in-out 2s, height 1s ease-in 1s;
+        }
+
+        /* img:hover { */
+        /* width: 56px; */
+        /* height: 56px; */
+        /* } */
+    </style>
+
+    <script>
+        btn.addEventListener("click", () => {
+            myimage.style.width = "55px";
+            myimage.style.height = "55px";
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimage" src="nature.jpg" alt="">
+            <br>
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    btn.addEventListener("click", () => {
+
+        if (myimage.style.width === '400px') {
+            myimage.style.width = "55px";
+            myimage.style.height = "55px";
+        }
+        else {
+            myimage.style.width = "400px";
+            myimage.style.height = "400px";
+        }
+    })
+</script>
+
+</html>

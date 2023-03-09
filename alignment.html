@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float clear alignment</title>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Alex Brush';
+            font-size: 22px;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            border-radius: 12PX;
+            /* margin auto make hole box in to center */
+            margin: 30px 30px;
+            background-color: rgb(222 174 222);
+        }
+
+        .item {
+            border: 3px solid red;
+            margin: 12px 12px;
+            padding: 12px;
+            border-radius: 12PX;
+            background-color: aquamarine;
+        }
+
+
+        #fruits {
+            float: left;
+            width: 47%;
+        }
+
+        #computer {
+            float: right;
+            width: 47%;
+        }
+
+        #stationary {
+            /* float: left; */
+            width: 97.5%;
+            clear: both;
+        }
+
+        p,
+        h3 {
+            /* this property can be over write */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: auto;
+            border-bottom: 3px solid black;
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestias architecto distinctio saepe
+                deserunt recusandae corporis a sapiente assumenda, provident delectus nostrum quasi illo nulla autem
+                doloribus id earum, nemo dolorem quibusdam animi commodi unde enim excepturi. Culpa, esse suscipit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto, tenetur inventore aspernatur optio
+                quos quod iste molestiae quaerat vero nisi tempora eius necessitatibus, libero dolores asperiores ipsam
+                alias numquam soluta voluptates quis animi officiis molestias. Deserunt aliquid praesentium nostrum.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestias architecto distinctio saepe
+                deserunt recusandae corporis a sapiente assumenda, provident delectus nostrum quasi illo nulla autem
+                doloribus id earum, nemo dolorem quibusdam animi commodi unde enim excepturi. Culpa, esse suscipit.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, id sit porro dolorem, odit sint
+                suscipit aut nemo quasi blanditiis unde aliquid dignissimos voluptatem. Cupiditate dolorum quibusdam rem
+                dolores a voluptatibus quasi architecto, explicabo, sapiente natus, tempora autem quo minus.
+            </p>
+        </div>
+
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestias architecto distinctio saepe
+                deserunt recusandae corporis a sapiente assumenda, provident delectus nostrum quasi illo nulla autem
+                doloribus id earum, nemo dolorem quibusdam animi commodi unde enim excepturi. Culpa, esse suscipit.
+            </p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>glassesy</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestias architecto distinctio saepe
+                deserunt recusandae corporis a sapiente assumenda, provident delectus nostrum quasi illo nulla autem
+                doloribus id earum, nemo dolorem quibusdam animi commodi unde enim excepturi. Culpa, esse suscipit.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

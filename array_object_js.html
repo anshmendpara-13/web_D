@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+
+<body>
+    <div class="container">simple html</div>
+    <script>
+        let myvar1 = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        // primitive ke alava jo kuch hota he vo object he
+        // below are object
+        let employee = {
+            name: "ansh",
+            salary: 1,
+            channel1: "codewithansh",
+            channel2: "cpwithansh",
+            'channel 3': "dsawithansh"
+        }
+        console.log(employee);
+
+        // array are object
+        let name = [1, 2, "ansh", 45, undefined, null];
+        console.log(name);
+        console.log(name[2]);
+        name = name.sort();
+        console.log(name);
+        console.log(name[2]);
+
+        let name1 = new Array("ansh", 45, undefined, null);
+        console.log(name1);
+        console.log(name1.length);
+
+        name.push("this is push")
+        console.log(name);
+        name.pop();
+        console.log(name);
+
+        console.log(employee.name);
+        console.log(employee.channel2);
+        console.log(employee['channel1']);
+        // single and double cort are same 
+        console.log(employee["channel 3"]);
+
+        name3 = new Array(10);
+        console.log(name3);
+        name3[0] = 15;
+        console.log(name3);
+        name3.push("this is ansh");
+        console.log(name3);
+
+
+
+
+    </script>
+</body>
+
+</html>

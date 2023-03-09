@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* block element are set width but inline not set width */
+        /* inline means jitani jagah he vo lelo */
+        header {
+            margin: auto;
+            border: 4px solid red;
+            width: 1200px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 300px;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 2px;
+            text-align: center;
+
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            text-align: justify;
+            /* text-align: left; */
+            display: block;
+            width: 33%;
+            /* below line not change border margin and width */
+            /* margin: 5px; */
+            box-sizing: border-box;
+            /* width: 100%; */
+            display: inline-block;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="top">
+        <img src="/MAHADEV.jpeg" alt="">
+        <h3>Welcome to my blog</h3>
+    </header>
+    <div class="container">
+
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit earum reprehenderit aliquam
+                ratione
+                dignissimos voluptates quisquam minus in vel autem, nostrum dolores officiis, quae accusamus fugiat
+                dolore
+                modi? Quis facere voluptate facilis veniam nam ducimus quam optio quidem id.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit earum reprehenderit aliquam
+                ratione
+                dignissimos voluptates quisquam minus in vel autem, nostrum dolores officiis, quae accusamus fugiat
+                dolore
+                modi? Quis facere voluptate facilis veniam nam ducimus quam optio quidem id.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit earum reprehenderit aliquam
+                ratione
+                dignissimos voluptates quisquam minus in vel autem, nostrum dolores officiis, quae accusamus fugiat
+                dolore
+                modi? Quis facere voluptate facilis veniam nam ducimus quam optio quidem id.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only animation</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(132, 255, 255);
+            background-color: black;
+
+        }
+
+        .box {
+
+            /* below three line comment because of fire ball animation */
+            /* width: 300px; */
+            /* height: 300px; */
+            /* background-color: rgb(255, 47, 47); */
+
+
+
+            color: black;
+
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation-name: widthanimation;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-iteration-count: 2;
+            /* default normal */
+            animation-direction: alternate-reverse;
+
+            animation: widthanimation 3s ease-in-out 0.5s 4 alternate;
+        }
+
+        /* @keyframes widthanimation {
+
+            from {
+                width: 300px;
+                font-size: 40px;
+                border: none;
+                background-color: white;
+            }
+
+            to {
+                width: 600px;
+                font-size: 20px;
+                border: 5px solid black;
+                background-image: url("nature.jpg");
+            }
+        } */
+
+
+        /* below code for fire ball animation only */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            height: 40px;
+            margin: 60px 90px;
+            /* animation/: rotate 0.1s ease-in infinite; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="slider"> -->
+        <!-- <img src="nature.jpg" alt=""> -->
+        <!-- <img src="https://source.unsplash.com/collection/190727/1600*900" alt=""> -->
+        <!-- <img src="https://source.unsplash.com/collection/190727/1600*900" alt=""> -->
+
+        <!-- </div> -->
+        <div class="box"> This is nature</div> -->
+
+
+        <!-- below code for fire ball animation only  -->
+        <main>
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+            <img src="fire_ring.png" alt="">
+        </main>
+    </div>
+
+</body>
+
+</html>
