@@ -1,0 +1,143 @@
+/* CSS Reset */
+/* * {
+        position: relative;
+
+    } */
+
+body {
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url(img/bg.jpg);
+    opacity: 5;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 60px;
+    top: 20px;
+
+}
+
+.left img {
+    width: 136px;
+    filter: invert(100%);
+    /* width: min(100% - 15px, 840px);
+        margin-inline: auto; */
+}
+
+.left div {
+    line-height: 0px;
+    font-size: 28px;
+    text-align: center;
+    /* display:inline-block; */
+
+
+}
+
+.mid {
+    display: block;
+    width: 49%;
+    margin: 29px auto;
+    /* border: 2px solid green; */
+
+    /* width: min(100% - 15px, 840px);
+        margin-inline: auto; */
+
+}
+
+.right {
+    position: absolute;
+    right: 70px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+
+}
+
+.navbar {
+    display: inline-block;
+
+    width: min(100% - 15px, 840px);
+    margin-inline: auto;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 13px;
+
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+
+}
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    /* width: min(100% - 15px, 840px); */
+    /* margin-inline: auto; */
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    border: 2px solid white;
+    margin: 145px 320px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    /* display: flex; */
+    width: min(100% - 15px, 840px);
+    margin-inline: auto;
+}
+
+.form-group input {
+
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    /* display: inline-block; */
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+
+    width: min(100% - 15px, 840px);
+    margin-inline: auto;
+}
+
+.container h1 {
+    text-align: center;
+
+    width: min(100% - 15px, 840px);
+    margin-inline: auto;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
